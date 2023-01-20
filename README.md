@@ -1,25 +1,22 @@
-<h1 align="center">Typescript Library Skeleton</h1>
+<h1 align="center">Express Typescript Service Skeleton</h1>
 
 <p align="center">
-  Skeleton for new typescript services based on hexagonal architecture
+  Skeleton for new typescript services based on express
 </p>
 
 <p align="center">
-    <a href="https://github.com/AlbertHernandez/hexagonal-architecture-typescript-service-skeleton/actions/workflows/nodejs.yml?branch=main"><img src="https://github.com/AlbertHernandez/hexagonal-architecture-typescript-service-skeleton/actions/workflows/nodejs.yml/badge.svg?branch=main" alt="nodejs"/></a>
+    <a href="https://github.com/AlbertHernandez/express-typescript-service-skeleton/actions/workflows/nodejs.yml?branch=main"><img src="https://github.com/AlbertHernandez/express-typescript-service-skeleton/actions/workflows/nodejs.yml/badge.svg?branch=main" alt="nodejs"/></a>
 </p>
 
 ## Table of Contents
 
-* [Preparing environment to contribute](#preparing-environment)
-* [Playground](#playground)
-* [Building](#building)
-* [Testing](#testing)
-* [Linting](#linting)
-* [Contributing](#contributing)
+- [Installing](#installing)
+- [Building](#building)
+- [Testing](#testing)
+- [Linting](#linting)
+- [Contributing](#contributing)
 
-## Preparing environment to contribute
-
-This library has been designed to work with node v16 and npm 8. In order to configure your local environment you can run:
+## Installing
 
 ```bash
 nvm install 18.0.0
@@ -55,7 +52,3 @@ Fix lint issues automatically
 ```bash
 npm run lint:fix
 ```
-
-## Contributing
-
-Contributions welcome! See the [Contributing Guide](https://github.com/AlbertHernandez/hexagonal-architecture-typescript-service-skeleton/blob/main/CONTRIBUTING.md).
