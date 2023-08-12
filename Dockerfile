@@ -34,20 +34,17 @@ RUN --mount=type=cache,target=$DIR/.npm \
   npm set cache $DIR/.npm && \
   echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $DIR/.npmrc && \
   npm ci && \
-  npm cache clean --force
+  npm cache clean --force && \
+  rm -f .npmrc
 
 COPY tsconfig*.json $DIR
 COPY src $DIR/src
 
 RUN npm run build
 
-RUN --mount=type=cache,target=$DIR/.npm \
-  npm set cache $DIR/.npm && \
-  npm ci --omit=dev && \
-  npm cache clean --force && \
-  rm -f .npmrc
-
-RUN wget https://gobinaries.com/tj/node-prune --output-document - | /bin/sh && node-prune
+RUN npm prune --production && \
+  wget https://gobinaries.com/tj/node-prune --output-document - | /bin/sh && \
+  node-prune
 
 FROM base AS production
 
