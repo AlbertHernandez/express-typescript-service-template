@@ -1,5 +1,4 @@
-import { config as dotEnvConfig } from "dotenv";
-dotEnvConfig();
+import "./load-env-vars";
 
 import express from "express";
 
