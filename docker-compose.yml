@@ -26,6 +26,6 @@ services:
     env_file: .env
     volumes:
       - .:/project
-      - ignore:/project/node_modules/
+      - exclude:/project/node_modules/
 volumes:
-  ignore:
+  exclude:
