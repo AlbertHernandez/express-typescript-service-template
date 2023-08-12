@@ -44,6 +44,12 @@ Now, you should be able to start debugging configuring using your IDE. For examp
 }
 ```
 
+If you want to stop developing, you can stop the service running:
+
+```bash
+make stop
+```
+
 ## Building
 
 ```bash

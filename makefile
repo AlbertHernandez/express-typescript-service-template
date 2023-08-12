@@ -1,8 +1,11 @@
 start-dev:
-	docker-compose up my-service-dev
+	docker-compose up -d my-service-dev
 
 start-production:
-	docker-compose up my-service-production
+	docker-compose up -d my-service-production
+
+stop:
+	docker-compose down
 
 test:
 	npm run test
