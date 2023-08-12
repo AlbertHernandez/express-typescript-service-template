@@ -28,34 +28,34 @@ CMD ["npm", "run", "start:dev"]
 
 FROM base as build
 
+ARG BUILD_NODE_ENV=production
+
 RUN --mount=type=cache,target=$DIR/.npm \
   npm set cache $DIR/.npm && \
   echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $DIR/.npmrc && \
   npm ci && \
-  npm cache clean --force && \
-  rm -f .npmrc
+  npm cache clean --force
 
 COPY tsconfig*.json $DIR
 COPY src $DIR/src
 
 RUN npm run build
 
-FROM base AS production
-
-ENV NODE_ENV=production
-ARG BUILD_NODE_ENV=production
-ENV USER=node
-ENV GROUP=node
-
 RUN --mount=type=cache,target=$DIR/.npm \
   npm set cache $DIR/.npm && \
-  echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $DIR/.npmrc && \
-  npm ci --only=production && \
+  npm ci --omit=dev && \
   npm cache clean --force && \
   rm -f .npmrc
 
+FROM base AS production
+
+ENV NODE_ENV=production
+ENV USER=node
+ENV GROUP=node
+
 USER $USER
 
+COPY --chown=$USER:$GROUP --from=build $DIR/node_modules $DIR/node_modules
 COPY --chown=$USER:$GROUP --from=build $DIR/dist $DIR/dist
 
 EXPOSE ${PORT}
