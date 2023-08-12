@@ -1,22 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "module": "commonjs",
+    "target": "ES2021",
     "esModuleInterop": true,
-    "target": "es6",
-    "noImplicitAny": true,
-    "moduleResolution": "node",
-    "sourceMap": false,
-    "rootDir": ".",
     "strict": true,
-    "noEmit": false,
-    "resolveJsonModule": true,
-    "noUnusedLocals": true,
-    "outDir": "./dist"
+    "outDir": "dist",
+    "sourceMap": true
   },
-  "include": [
-    "src/**/**.ts",
-    "tests/**/**.ts",
-    "playground/**/**.ts",
-  ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist", "tests"]
 }
