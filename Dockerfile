@@ -47,6 +47,8 @@ RUN --mount=type=cache,target=$DIR/.npm \
   npm cache clean --force && \
   rm -f .npmrc
 
+RUN wget https://gobinaries.com/tj/node-prune --output-document - | /bin/sh && node-prune
+
 FROM base AS production
 
 ENV NODE_ENV=production
