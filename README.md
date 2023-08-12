@@ -16,19 +16,38 @@
 - [Linting](#linting)
 - [Contributing](#contributing)
 
-## Installing
+## Developing
+
+The project is fully dockerized, if we want to start the app in development mode, we just need to run:
 
 ```bash
-nvm install 18.0.0
-nvm use
-npm install npm@8.3.0 -g
-npm install
+make start-dev
+```
+
+Now, you should be able to start debugging configuring using your IDE. For example, if you are using vscode, you can create a `.vscode/launch.json` file with the following config:
+
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach to Docker",
+            "address": "localhost",
+            "restart": true,
+            "port": 9229,
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/project"
+        }
+    ]
+}
 ```
 
 ## Building
 
 ```bash
-npm run build
+make build
 ```
 
 ## Testing
@@ -36,7 +55,7 @@ npm run build
 ### Jest with Testing Library
 
 ```bash
-npm run test
+make test
 ```
 
 ## Linting
@@ -44,11 +63,11 @@ npm run test
 Run the linter
 
 ```bash
-npm run lint
+make lint
 ```
 
 Fix lint issues automatically
 
 ```bash
-npm run lint:fix
+make lint-fix
 ```

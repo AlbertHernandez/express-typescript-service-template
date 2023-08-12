@@ -4,11 +4,11 @@
   "description": "Skeleton for new typescript services based on hexagonal architecture",
   "main": "dist/main.js",
   "scripts": {
-    "start": "node dist/src/main.js",
-    "start:dev": "tsnd --respawn src/main.ts",
+    "start": "node dist/main.js",
+    "start:dev": "tsnd --inspect=0.0.0.0:9229 --respawn src/main.ts",
     "test": "npm run test:unit",
     "test:unit": "NODE_ENV=test jest --coverage",
-    "prepare": "husky install",
+    "prepare": "if [ \"$BUILD_NODE_ENV\" != \"production\" ]; then husky install; fi",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
     "build": "npm run build:clean && npm run build:tsc",
@@ -60,6 +60,7 @@
     ]
   },
   "dependencies": {
+    "ci": "^2.3.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2"
   }
