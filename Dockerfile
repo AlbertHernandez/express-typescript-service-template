@@ -4,7 +4,6 @@ RUN apk update && \
     apk add --no-cache dumb-init
 
 ENV DIR /project
-
 WORKDIR $DIR
 
 COPY package*.json $DIR
@@ -12,6 +11,7 @@ COPY package*.json $DIR
 FROM base AS dev
 
 ENV NODE_ENV=development
+
 RUN --mount=type=cache,target=$DIR/.npm \
   npm set cache $DIR/.npm && \
   echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $DIR/.npmrc && \
@@ -52,10 +52,10 @@ ENV NODE_ENV=production
 ENV USER=node
 ENV GROUP=node
 
-USER $USER
+COPY --from=build $DIR/node_modules $DIR/node_modules
+COPY --from=build $DIR/dist $DIR/dist
 
-COPY --chown=$USER:$GROUP --from=build $DIR/node_modules $DIR/node_modules
-COPY --chown=$USER:$GROUP --from=build $DIR/dist $DIR/dist
+USER $USER
 
 EXPOSE ${PORT}
 
