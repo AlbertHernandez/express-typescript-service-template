@@ -1,16 +1,12 @@
 FROM node:18-alpine3.16 AS base
 
-RUN apk update && \
-    apk add --no-cache dumb-init
-
 ENV DIR /project
 WORKDIR $DIR
-
-COPY package*.json $DIR
 
 FROM base AS dev
 
 ENV NODE_ENV=development
+COPY package*.json $DIR
 
 RUN --mount=type=cache,target=$DIR/.npm \
   npm set cache $DIR/.npm && \
@@ -26,9 +22,14 @@ COPY .env $DIR
 EXPOSE ${PORT}
 CMD ["npm", "run", "start:dev"]
 
-FROM base as build
+FROM base AS build
 
 ARG BUILD_NODE_ENV=production
+
+RUN apk update && \
+    apk add --no-cache dumb-init
+
+COPY package*.json $DIR
 
 RUN --mount=type=cache,target=$DIR/.npm \
   npm set cache $DIR/.npm && \
@@ -40,9 +41,8 @@ RUN --mount=type=cache,target=$DIR/.npm \
 COPY tsconfig*.json $DIR
 COPY src $DIR/src
 
-RUN npm run build
-
-RUN npm prune --production && \
+RUN npm run build && \
+  npm prune --production && \
   wget https://gobinaries.com/tj/node-prune --output-document - | /bin/sh && \
   node-prune
 
@@ -50,8 +50,8 @@ FROM base AS production
 
 ENV NODE_ENV=production
 ENV USER=node
-ENV GROUP=node
 
+COPY --from=build /usr/bin/dumb-init /usr/bin/dumb-init
 COPY --from=build $DIR/node_modules $DIR/node_modules
 COPY --from=build $DIR/dist $DIR/dist
 
