@@ -16,6 +16,7 @@ RUN --mount=type=cache,target=$DIR/.npm \
   npm set cache $DIR/.npm && \
   echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $DIR/.npmrc && \
   npm install && \
+  npm cache clean --force && \
   rm -f .npmrc
 
 COPY tsconfig*.json $DIR
@@ -31,6 +32,7 @@ RUN --mount=type=cache,target=$DIR/.npm \
   npm set cache $DIR/.npm && \
   echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $DIR/.npmrc && \
   npm ci && \
+  npm cache clean --force && \
   rm -f .npmrc
 
 COPY tsconfig*.json $DIR
@@ -49,6 +51,7 @@ RUN --mount=type=cache,target=$DIR/.npm \
   npm set cache $DIR/.npm && \
   echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $DIR/.npmrc && \
   npm ci && \
+  npm cache clean --force && \
   rm -f .npmrc
 
 USER $USER
