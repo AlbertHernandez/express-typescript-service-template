@@ -8,7 +8,7 @@
     "start:dev": "tsnd --inspect=0.0.0.0:9229 --respawn src/main.ts",
     "test": "npm run test:unit",
     "test:unit": "NODE_ENV=test jest --coverage",
-    "prepare": "if [ \"$BUILD_NODE_ENV\" != \"production\" ]; then husky install; fi",
+    "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
     "build": "npm run build:clean && npm run build:tsc",
