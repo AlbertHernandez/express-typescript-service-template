@@ -1,17 +1,15 @@
 version: "3.8"
+
 services:
   my-service-production:
     container_name: my-service-production
     build:
       target: production
       context: .
-      dockerfile: Dockerfile
       args:
         - PORT=${PORT}
     ports:
       - "${PORT}:${PORT}"
-      - "9229:9229"
-    env_file: .env
 
   my-service-dev:
     container_name: my-service-dev
@@ -19,13 +17,11 @@ services:
     build:
       target: dev
       context: .
-      dockerfile: Dockerfile
       args:
         - PORT=${PORT}
     ports:
       - "${PORT}:${PORT}"
       - "9229:9229"
-    env_file: .env
     volumes:
       - .:/project
       - exclude:/project/node_modules/

@@ -28,19 +28,17 @@ Now, you should be able to start debugging configuring using your IDE. For examp
 
 ```json
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "node",
-            "request": "attach",
-            "name": "Attach to Docker",
-            "address": "localhost",
-            "restart": true,
-            "port": 9229,
-            "localRoot": "${workspaceFolder}",
-            "remoteRoot": "/project"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to docker",
+      "restart": true,
+      "port": 9229,
+      "remoteRoot": "/project"
+    }
+  ]
 }
 ```
 

@@ -1,7 +1,6 @@
-.dockerignore
-node_modules
-npm-debug.log
-Dockerfile
-.git
-.gitignore
-.npmrc
+*
+!/package.json
+!/package-lock.json
+!/tsconfig.prod.json
+!/tsconfig.json
+!/src
