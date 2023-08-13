@@ -16,7 +16,6 @@ RUN echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $DIR/.npmrc && \
 
 COPY tsconfig*.json $DIR
 COPY src $DIR/src
-COPY .env $DIR
 
 EXPOSE $PORT
 CMD ["npm", "run", "start:dev"]
