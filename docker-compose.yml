@@ -1,4 +1,4 @@
-version: '3.5'
+version: "3.8"
 services:
   my-service-production:
     container_name: my-service-production
@@ -7,10 +7,12 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        - PORT = ${PORT}
+        - PORT=${PORT}
     ports:
-      - ${PORT}:${PORT}
+      - "${PORT}:${PORT}"
+      - "9229:9229"
     env_file: .env
+
   my-service-dev:
     container_name: my-service-dev
     restart: always
@@ -19,13 +21,14 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        - PORT = ${PORT}
+        - PORT=${PORT}
     ports:
-      - ${PORT}:${PORT}
+      - "${PORT}:${PORT}"
       - "9229:9229"
     env_file: .env
     volumes:
       - .:/project
       - exclude:/project/node_modules/
+
 volumes:
   exclude:
