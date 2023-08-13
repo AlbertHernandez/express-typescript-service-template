@@ -34,9 +34,7 @@ COPY tsconfig*.json $DIR
 COPY src $DIR/src
 
 RUN npm run build && \
-    npm prune --production && \
-    wget https://gobinaries.com/tj/node-prune --output-document - | /bin/sh && \
-    node-prune
+    npm prune --production
 
 FROM base AS production
 
