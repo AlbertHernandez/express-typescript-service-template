@@ -10,7 +10,10 @@ jobs:
       - name: Use Node.js 20
         uses: actions/setup-node@v1
         with:
-          node-version: 20
+          node-version: 20.9
+      - name: Npm version
+        run: |
+          npm install npm@10.2 -g
       - name: npm install
         run: |
           npm install
