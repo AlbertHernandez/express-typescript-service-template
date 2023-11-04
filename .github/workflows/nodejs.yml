@@ -15,9 +15,9 @@ jobs:
       - name: Npm version
         run: |
           npm install npm@10.2 -g
-      - name: npm install
+      - name: npm ci
         run: |
-          npm install
+          npm ci
       - name: npm run build
         run: |
           npm run build --if-present
