@@ -6,11 +6,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 20
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v3
         with:
-          node-version: 20.9
+          node-version-file: '.nvmrc'
+          cache: 'npm'
       - name: Npm version
         run: |
           npm install npm@10.2 -g
