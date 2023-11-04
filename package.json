@@ -27,8 +27,8 @@
   "author": "alberthernandezdev@gmail.com",
   "license": "MIT",
   "engines": {
-    "node": ">=18.12.0",
-    "npm": ">=9.3.0"
+    "node": ">=20.9",
+    "npm": ">=10.2"
   },
   "bugs": {
     "url": "https://github.com/AlbertHernandez/express-typescript-service-skeleton/issues"

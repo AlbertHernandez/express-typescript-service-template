@@ -10,11 +10,10 @@
 
 ## Table of Contents
 
-- [Installing](#installing)
+- [Developing](#developing)
 - [Building](#building)
 - [Testing](#testing)
 - [Linting](#linting)
-- [Contributing](#contributing)
 
 ## Developing
 
