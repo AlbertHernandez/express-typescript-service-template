@@ -1,7 +1,7 @@
 {
   "name": "express-typescript-service-skeleton",
   "version": "1.0.0",
-  "description": "Skeleton for new typescript services based on hexagonal architecture",
+  "description": "Skeleton for new typescript services based on express",
   "main": "dist/main.js",
   "scripts": {
     "start": "node dist/main.js",
