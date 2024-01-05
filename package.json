@@ -25,8 +25,8 @@
   "scripts": {
     "start": "node dist/main.js",
     "start:dev": "tsnd --inspect=0.0.0.0:9229 --respawn src/main.ts",
-    "test": "npm run test:unit",
-    "test:unit": "jest",
+    "test": "rimraf coverage && npm run test:unit",
+    "test:unit": "jest tests/src --coverageDirectory coverage/unit",
     "prepare": "husky install",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
