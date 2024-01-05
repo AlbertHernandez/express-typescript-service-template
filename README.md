@@ -20,7 +20,7 @@
 The project is fully dockerized, if we want to start the app in development mode, we just need to run:
 
 ```bash
-make start-dev
+docker-compose up -d my-service-dev
 ```
 
 Now, you should be able to start debugging configuring using your IDE. For example, if you are using vscode, you can create a `.vscode/launch.json` file with the following config:
@@ -44,13 +44,13 @@ Now, you should be able to start debugging configuring using your IDE. For examp
 If you want to stop developing, you can stop the service running:
 
 ```bash
-make stop
+docker-compose down
 ```
 
 ## Building
 
 ```bash
-make build
+npm run build
 ```
 
 ## Testing
@@ -58,7 +58,7 @@ make build
 ### Jest with Testing Library
 
 ```bash
-make test
+npm run test
 ```
 
 ## Linting
@@ -66,11 +66,11 @@ make test
 Run the linter
 
 ```bash
-make lint
+npm run lint
 ```
 
 Fix lint issues automatically
 
 ```bash
-make lint-fix
+npm run lint:fix
 ```
