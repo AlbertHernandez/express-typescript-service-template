@@ -17,6 +17,25 @@
   <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Dockerized 🐳_-blue.svg" alt="docker"/></a>
 </p>
 
+## 👀 Motivation
+
+Starting a new service in NodeJS can be a bit frustrating, there are a lot of things to consider if we want to have a really good starting point where later we can iterate.
+
+The main objective of this template is to provide a good base configuration for our NodeJS services that we can start using and move to production as soon as possible.
+
+## 🌟 What is including this template?
+
+1. 🐳 Fully dockerized service ready for development and production environments with the best practices for docker, trying to provide a performance and small image just with the code we really need in your environments.
+2. 👷 Use [SWC](https://swc.rs/) for compiling and running the tests of the service.
+3. ⚡️ Configure [Express](https://expressjs.com/) as HTTP framework.
+4. 🐶 Integration with [husky](https://typicode.github.io/husky/) to ensure we have good quality and conventions while we are developing like:
+   - 💅 Running the linter over the files that have been changed
+   - 💬 Use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to ensure our commits have a convention.
+   - ✅ Run the tests automatically.
+   - ⚙️ Check our project does not have type errors with Typescript.
+5. 🧪 Testing with [Jest](https://jestjs.io/es-ES/) and [supertest](https://github.com/ladjs/supertest) for unit and e2e tests.
+6. 🤜🤛 Combine unit and e2e test coverage. In the services we may have both type of tests, unit and e2e tests, and usually we would like to see what is the combined test coverage, so we can see the full picture.
+
 ## 🧑‍💻 Developing
 
 First, we will need to create our .env file, we can create a copy from the example one:
