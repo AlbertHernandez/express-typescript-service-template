@@ -9,5 +9,8 @@
     },
     "baseUrl": "./"
   },
+  "module": {
+    "type": "commonjs"
+  }
   "minify": false
 }
