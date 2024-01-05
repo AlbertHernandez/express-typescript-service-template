@@ -1,5 +1,5 @@
 {
-  "name": "express-typescript-service-skeleton",
+  "name": "express-typescript-service-template",
   "version": "1.0.0",
   "description": "Skeleton for new typescript services based on express",
   "main": "dist/main.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlbertHernandez/express-typescript-service-skeleton.git"
+    "url": "git+https://github.com/AlbertHernandez/express-typescript-service-template.git"
   },
   "keywords": [
     "typescript",
@@ -31,9 +31,9 @@
     "npm": ">=10.2"
   },
   "bugs": {
-    "url": "https://github.com/AlbertHernandez/express-typescript-service-skeleton/issues"
+    "url": "https://github.com/AlbertHernandez/express-typescript-service-template/issues"
   },
-  "homepage": "https://github.com/AlbertHernandez/express-typescript-service-skeleton#readme",
+  "homepage": "https://github.com/AlbertHernandez/express-typescript-service-template#readme",
   "devDependencies": {
     "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
