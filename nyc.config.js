@@ -1,0 +1,14 @@
+const MIN_COVERAGE = 80;
+
+const config = {
+  all: true,
+  exclude: ["src/main.ts", "src/log-and-exit-uncaught-exceptions.ts"],
+  "check-coverage": false,
+  branches: MIN_COVERAGE,
+  lines: MIN_COVERAGE,
+  functions: MIN_COVERAGE,
+  statements: MIN_COVERAGE,
+  reporter: ["lcov", "json", "text"],
+};
+
+module.exports = config;
