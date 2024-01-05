@@ -4,7 +4,11 @@
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 13 },
-        "end": { "line": 5, "column": 2 }
+        "end": { "line": 1, "column": 22 }
+      },
+      "1": {
+        "start": { "line": 1, "column": 22 },
+        "end": { "line": 5, "column": null }
       }
     },
     "fnMap": {},
@@ -12,7 +16,7 @@
       "0": {
         "loc": {
           "start": { "line": 3, "column": 10 },
-          "end": { "line": 3, "column": 34 }
+          "end": { "line": 3, "column": null }
         },
         "type": "binary-expr",
         "locations": [
@@ -22,12 +26,12 @@
           },
           {
             "start": { "line": 3, "column": 30 },
-            "end": { "line": 3, "column": 34 }
+            "end": { "line": 3, "column": null }
           }
         ]
       }
     },
-    "s": { "0": 1 },
+    "s": { "0": 1, "1": 1 },
     "f": {},
     "b": { "0": [1, 0] }
   },
@@ -35,17 +39,13 @@
     "path": "/Users/albert/Code/express-typescript-service-template/src/load-env-vars.ts",
     "statementMap": {
       "0": {
-        "start": { "line": 1, "column": 0 },
-        "end": { "line": 1, "column": 32 }
-      },
-      "1": {
         "start": { "line": 2, "column": 0 },
-        "end": { "line": 2, "column": 9 }
+        "end": { "line": 2, "column": null }
       }
     },
     "fnMap": {},
     "branchMap": {},
-    "s": { "0": 0, "1": 0 },
+    "s": { "0": 0 },
     "f": {},
     "b": {}
   },
@@ -54,15 +54,15 @@
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
-        "end": { "line": 4, "column": 3 }
+        "end": { "line": 4, "column": null }
       },
       "1": {
         "start": { "line": 2, "column": 2 },
-        "end": { "line": 2, "column": 23 }
+        "end": { "line": 2, "column": null }
       },
       "2": {
         "start": { "line": 3, "column": 2 },
-        "end": { "line": 3, "column": 18 }
+        "end": { "line": 3, "column": null }
       }
     },
     "fnMap": {
@@ -70,11 +70,11 @@
         "name": "(anonymous_0)",
         "decl": {
           "start": { "line": 1, "column": 32 },
-          "end": { "line": 1, "column": 37 }
+          "end": { "line": 1, "column": null }
         },
         "loc": {
-          "start": { "line": 1, "column": 40 },
-          "end": { "line": 4, "column": 1 }
+          "start": { "line": 1, "column": 32 },
+          "end": { "line": 4, "column": null }
         }
       }
     },
@@ -87,25 +87,13 @@
     "path": "/Users/albert/Code/express-typescript-service-template/src/main.ts",
     "statementMap": {
       "0": {
-        "start": { "line": 1, "column": 0 },
-        "end": { "line": 1, "column": 44 }
-      },
-      "1": {
-        "start": { "line": 2, "column": 0 },
-        "end": { "line": 2, "column": 25 }
-      },
-      "2": {
-        "start": { "line": 4, "column": 0 },
-        "end": { "line": 4, "column": 34 }
-      },
-      "3": {
         "start": { "line": 6, "column": 0 },
-        "end": { "line": 6, "column": 21 }
+        "end": { "line": 6, "column": null }
       }
     },
     "fnMap": {},
     "branchMap": {},
-    "s": { "0": 0, "1": 0, "2": 0, "3": 0 },
+    "s": { "0": 0 },
     "f": {},
     "b": {}
   },
@@ -114,11 +102,7 @@
     "statementMap": {
       "0": {
         "start": { "line": 3, "column": 4 },
-        "end": { "line": 3, "column": 17 }
-      },
-      "1": {
-        "start": { "line": 1, "column": 0 },
-        "end": { "line": 1, "column": 13 }
+        "end": { "line": 3, "column": null }
       }
     },
     "fnMap": {
@@ -126,16 +110,16 @@
         "name": "(anonymous_0)",
         "decl": {
           "start": { "line": 2, "column": 2 },
-          "end": { "line": 2, "column": 7 }
+          "end": { "line": 2, "column": 10 }
         },
         "loc": {
-          "start": { "line": 2, "column": 7 },
-          "end": { "line": 4, "column": 3 }
+          "start": { "line": 2, "column": 10 },
+          "end": { "line": 4, "column": null }
         }
       }
     },
     "branchMap": {},
-    "s": { "0": 0, "1": 0 },
+    "s": { "0": 0 },
     "f": { "0": 0 },
     "b": {}
   },
@@ -143,173 +127,173 @@
     "path": "/Users/albert/Code/express-typescript-service-template/src/server.ts",
     "statementMap": {
       "0": {
-        "start": { "line": 1, "column": 0 },
-        "end": { "line": 1, "column": 43 }
+        "start": { "line": 8, "column": 13 },
+        "end": { "line": 8, "column": null }
       },
       "1": {
-        "start": { "line": 5, "column": 0 },
-        "end": { "line": 5, "column": 34 }
+        "start": { "line": 1, "column": 33 },
+        "end": { "line": 1, "column": null }
       },
       "2": {
-        "start": { "line": 6, "column": 0 },
-        "end": { "line": 6, "column": 54 }
+        "start": { "line": 5, "column": 23 },
+        "end": { "line": 5, "column": null }
       },
       "3": {
-        "start": { "line": 13, "column": 4 },
-        "end": { "line": 13, "column": 25 }
+        "start": { "line": 6, "column": 29 },
+        "end": { "line": 6, "column": null }
       },
       "4": {
-        "start": { "line": 14, "column": 4 },
-        "end": { "line": 14, "column": 33 }
+        "start": { "line": 13, "column": 4 },
+        "end": { "line": 13, "column": null }
       },
       "5": {
-        "start": { "line": 15, "column": 4 },
-        "end": { "line": 15, "column": 42 }
+        "start": { "line": 14, "column": 4 },
+        "end": { "line": 14, "column": null }
       },
       "6": {
-        "start": { "line": 19, "column": 4 },
-        "end": { "line": 25, "column": 7 }
+        "start": { "line": 15, "column": 4 },
+        "end": { "line": 15, "column": null }
       },
       "7": {
-        "start": { "line": 20, "column": 6 },
-        "end": { "line": 24, "column": 9 }
+        "start": { "line": 19, "column": 4 },
+        "end": { "line": 25, "column": null }
       },
       "8": {
-        "start": { "line": 21, "column": 25 },
-        "end": { "line": 21, "column": 66 }
+        "start": { "line": 20, "column": 6 },
+        "end": { "line": 24, "column": null }
       },
       "9": {
-        "start": { "line": 22, "column": 8 },
-        "end": { "line": 22, "column": 69 }
+        "start": { "line": 21, "column": 25 },
+        "end": { "line": 21, "column": null }
       },
       "10": {
-        "start": { "line": 23, "column": 8 },
-        "end": { "line": 23, "column": 18 }
+        "start": { "line": 22, "column": 8 },
+        "end": { "line": 22, "column": null }
       },
       "11": {
-        "start": { "line": 29, "column": 4 },
-        "end": { "line": 40, "column": 7 }
+        "start": { "line": 23, "column": 8 },
+        "end": { "line": 23, "column": null }
       },
       "12": {
+        "start": { "line": 29, "column": 4 },
+        "end": { "line": 40, "column": null }
+      },
+      "13": {
         "start": { "line": 30, "column": 6 },
         "end": { "line": 37, "column": null }
       },
-      "13": {
-        "start": { "line": 31, "column": 8 },
-        "end": { "line": 36, "column": 11 }
-      },
       "14": {
+        "start": { "line": 31, "column": 8 },
+        "end": { "line": 36, "column": null }
+      },
+      "15": {
         "start": { "line": 32, "column": 10 },
         "end": { "line": 34, "column": null }
       },
-      "15": {
-        "start": { "line": 33, "column": 12 },
-        "end": { "line": 33, "column": 33 }
-      },
       "16": {
-        "start": { "line": 35, "column": 10 },
-        "end": { "line": 35, "column": 27 }
+        "start": { "line": 33, "column": 12 },
+        "end": { "line": 33, "column": null }
       },
       "17": {
-        "start": { "line": 39, "column": 6 },
-        "end": { "line": 39, "column": 23 }
+        "start": { "line": 35, "column": 10 },
+        "end": { "line": 35, "column": null }
       },
       "18": {
-        "start": { "line": 44, "column": 4 },
-        "end": { "line": 44, "column": 27 }
+        "start": { "line": 39, "column": 6 },
+        "end": { "line": 39, "column": null }
       },
       "19": {
-        "start": { "line": 8, "column": 0 },
-        "end": { "line": 8, "column": 13 }
+        "start": { "line": 44, "column": 4 },
+        "end": { "line": 44, "column": null }
       }
     },
     "fnMap": {
       "0": {
-        "name": "(anonymous_1)",
+        "name": "(anonymous_2)",
         "decl": {
           "start": { "line": 12, "column": 2 },
-          "end": { "line": 12, "column": null }
+          "end": { "line": 12, "column": 16 }
         },
         "loc": {
-          "start": { "line": 12, "column": 2 },
-          "end": { "line": 16, "column": 3 }
+          "start": { "line": 12, "column": 16 },
+          "end": { "line": 16, "column": null }
         }
       },
       "1": {
-        "name": "(anonymous_2)",
+        "name": "(anonymous_3)",
         "decl": {
           "start": { "line": 18, "column": 2 },
-          "end": { "line": 18, "column": 7 }
+          "end": { "line": 18, "column": 8 }
         },
         "loc": {
-          "start": { "line": 18, "column": 13 },
-          "end": { "line": 26, "column": 3 }
+          "start": { "line": 18, "column": 31 },
+          "end": { "line": 26, "column": null }
         }
       },
       "2": {
-        "name": "(anonymous_3)",
+        "name": "(anonymous_4)",
         "decl": {
           "start": { "line": 19, "column": 23 },
-          "end": { "line": 19, "column": 30 }
+          "end": { "line": 19, "column": null }
         },
         "loc": {
-          "start": { "line": 19, "column": 33 },
-          "end": { "line": 25, "column": 5 }
+          "start": { "line": 19, "column": 23 },
+          "end": { "line": 25, "column": null }
         }
       },
       "3": {
-        "name": "(anonymous_4)",
+        "name": "(anonymous_5)",
         "decl": {
           "start": { "line": 20, "column": 60 },
-          "end": { "line": 20, "column": 63 }
+          "end": { "line": 20, "column": null }
         },
         "loc": {
-          "start": { "line": 20, "column": 65 },
-          "end": { "line": 24, "column": 7 }
+          "start": { "line": 20, "column": 60 },
+          "end": { "line": 24, "column": null }
         }
       },
       "4": {
-        "name": "(anonymous_5)",
+        "name": "(anonymous_6)",
         "decl": {
           "start": { "line": 28, "column": 2 },
-          "end": { "line": 28, "column": 7 }
+          "end": { "line": 28, "column": 8 }
         },
         "loc": {
-          "start": { "line": 28, "column": 12 },
-          "end": { "line": 41, "column": 3 }
+          "start": { "line": 28, "column": 30 },
+          "end": { "line": 41, "column": null }
         }
       },
       "5": {
-        "name": "(anonymous_6)",
+        "name": "(anonymous_7)",
         "decl": {
           "start": { "line": 29, "column": 23 },
           "end": { "line": 29, "column": 24 }
         },
         "loc": {
-          "start": { "line": 29, "column": 43 },
-          "end": { "line": 40, "column": 5 }
+          "start": { "line": 29, "column": 33 },
+          "end": { "line": 40, "column": null }
         }
       },
       "6": {
-        "name": "(anonymous_7)",
+        "name": "(anonymous_8)",
         "decl": {
           "start": { "line": 31, "column": 30 },
-          "end": { "line": 31, "column": 35 }
+          "end": { "line": 31, "column": null }
         },
         "loc": {
-          "start": { "line": 31, "column": 38 },
-          "end": { "line": 36, "column": 9 }
+          "start": { "line": 31, "column": 30 },
+          "end": { "line": 36, "column": null }
         }
       },
       "7": {
-        "name": "(anonymous_8)",
+        "name": "(anonymous_9)",
         "decl": {
           "start": { "line": 43, "column": 2 },
-          "end": { "line": 43, "column": 15 }
+          "end": { "line": 43, "column": 43 }
         },
         "loc": {
-          "start": { "line": 43, "column": 15 },
-          "end": { "line": 45, "column": 3 }
+          "start": { "line": 43, "column": 43 },
+          "end": { "line": 45, "column": null }
         }
       }
     },
@@ -356,10 +340,10 @@
       "11": 1,
       "12": 1,
       "13": 1,
-      "14": 0,
+      "14": 1,
       "15": 0,
       "16": 0,
-      "17": 1,
+      "17": 0,
       "18": 1,
       "19": 1
     },
@@ -370,24 +354,24 @@
     "path": "/Users/albert/Code/express-typescript-service-template/src/health/health-controller.ts",
     "statementMap": {
       "0": {
-        "start": { "line": 5, "column": 4 },
-        "end": { "line": 5, "column": 27 }
+        "start": { "line": 3, "column": 13 },
+        "end": { "line": 3, "column": null }
       },
       "1": {
-        "start": { "line": 3, "column": 0 },
-        "end": { "line": 3, "column": 13 }
+        "start": { "line": 5, "column": 4 },
+        "end": { "line": 5, "column": null }
       }
     },
     "fnMap": {
       "0": {
-        "name": "(anonymous_0)",
+        "name": "(anonymous_1)",
         "decl": {
           "start": { "line": 4, "column": 2 },
-          "end": { "line": 4, "column": 7 }
+          "end": { "line": 4, "column": 8 }
         },
         "loc": {
-          "start": { "line": 4, "column": 39 },
-          "end": { "line": 6, "column": 3 }
+          "start": { "line": 4, "column": 41 },
+          "end": { "line": 6, "column": null }
         }
       }
     },
@@ -400,28 +384,28 @@
     "path": "/Users/albert/Code/express-typescript-service-template/src/health/health-router.ts",
     "statementMap": {
       "0": {
-        "start": { "line": 1, "column": 0 },
-        "end": { "line": 1, "column": 30 }
+        "start": { "line": 11, "column": 9 },
+        "end": { "line": 11, "column": null }
       },
       "1": {
-        "start": { "line": 3, "column": 0 },
-        "end": { "line": 3, "column": 55 }
+        "start": { "line": 1, "column": 20 },
+        "end": { "line": 1, "column": null }
       },
       "2": {
-        "start": { "line": 5, "column": 21 },
-        "end": { "line": 5, "column": 37 }
+        "start": { "line": 3, "column": 33 },
+        "end": { "line": 3, "column": null }
       },
       "3": {
-        "start": { "line": 11, "column": 9 },
-        "end": { "line": 11, "column": 21 }
+        "start": { "line": 5, "column": 21 },
+        "end": { "line": 5, "column": null }
       },
       "4": {
         "start": { "line": 7, "column": 25 },
-        "end": { "line": 7, "column": 47 }
+        "end": { "line": 7, "column": null }
       },
       "5": {
         "start": { "line": 9, "column": 0 },
-        "end": { "line": 9, "column": 67 }
+        "end": { "line": 9, "column": null }
       }
     },
     "fnMap": {},
