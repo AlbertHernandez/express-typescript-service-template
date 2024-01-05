@@ -11,7 +11,7 @@ ENV NODE_ENV=development
 COPY package*.json $DIR
 
 RUN echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $DIR/.npmrc && \
-    npm install && \
+    npm ci && \
     rm -f .npmrc
 
 COPY tsconfig*.json $DIR
