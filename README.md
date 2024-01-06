@@ -97,10 +97,22 @@ npm run build
 
 ## ✅ Testing
 
-In order to run the tests you can execute:
+The service provide different scripts for running the tests, to run all of them you can run:
 
 ```bash
 npm run test
+```
+
+If you are interested just in the unit tests, you can run:
+
+```bash
+npm run test:unit
+```
+
+Or if you want e2e tests, you can execute:
+
+```bash
+npm run test:e2e
 ```
 
 ## 💅 Linting
