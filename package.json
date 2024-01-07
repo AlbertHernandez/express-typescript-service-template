@@ -18,8 +18,8 @@
     "skeleton"
   ],
   "engines": {
-    "node": ">=20.9",
-    "npm": ">=10.2"
+    "node": ">=18.x",
+    "npm": ">=9.x"
   },
   "main": "dist/main.js",
   "scripts": {
