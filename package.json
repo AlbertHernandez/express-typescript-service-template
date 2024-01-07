@@ -15,7 +15,7 @@
   "keywords": [
     "typescript",
     "express",
-    "skeleton"
+    "template"
   ],
   "engines": {
     "node": ">=18.x",
