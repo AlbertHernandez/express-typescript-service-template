@@ -1,5 +1,5 @@
-- name: automerge
-  description: Indicates the PR is going to be merged automatically
+- name: feature requested
+  description: Request for a feature
   color: 0E8A16
 - name: ignore-for-release
   description: Ignore pull request for a new release
