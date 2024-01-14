@@ -1,0 +1,78 @@
+---
+💻 Source:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/**
+
+🧪 Tests:
+  - changed-files:
+      - any-glob-to-any-file:
+          - tests/**
+          - .jest/**
+          - scripts/merge-coverage.ts
+          - jest.config.ts
+          - nyc.config.js
+
+📝 Documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/**
+          - README.md
+          - images/**
+
+🐳 Build:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .dockerignore
+          - Dockerfile
+          - docker-compose.yml
+          - .nvmrc
+          - .swcrc
+          - tsconfig.json
+          - tsconfig.prod.json
+
+⚙️ Configuration:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .dockerignore
+          - .editorconfig
+          - .env.example
+          - .eslintignore
+          - .eslintrc
+          - .gitignore
+          - .npmignore
+          - .npmrc
+          - .nvmrc
+          - .prettierignore
+          - .swcrc
+          - .yamllint.yml
+          - .commitlint.config.js
+          - jest.config.ts
+          - lint-staged.config.js
+          - nest-cli.json
+          - nyc.config.js
+          - prettier.config.js
+          - tsconfig.json
+          - tsconfig.prod.json
+
+📦 Dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - package.json
+          - package-lock.json
+
+🚀 CI/CD:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/workflows/**
+          - .github/dependabot.yml
+          - .github/pr-scope-labeler.yml
+          - .husky/**
+
+🏠 Github Configuration:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/ISSUE_TEMPLATE/**
+          - .github/CODEOWNERS
+          - .github/labels.yml
+          - .github/PULL_REQUEST_TEMPLATE.md
