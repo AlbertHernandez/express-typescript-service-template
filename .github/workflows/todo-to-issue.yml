@@ -1,0 +1,28 @@
+---
+name: 'Todo to issue'
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: "TODO to Issue"
+        uses: "alstr/todo-to-issue-action@v4"
+        with:
+          ISSUE_TEMPLATE: |
+            ##  ✅ Codebase TODO  ✅
+
+            ### **📝 Title**: {{ title }}
+
+            ### **🔎 Details**
+
+            {{ body }}
+            {{ url }}
+            {{ snippet }}
+          AUTO_ASSIGN: true
+          IGNORE: "./github/workflows/todo-to-issue-yml"
