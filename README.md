@@ -36,6 +36,13 @@ The main objective of this template is to provide a good base configuration for 
 5. 🧪 Testing with [Jest](https://jestjs.io/es-ES/) and [supertest](https://github.com/ladjs/supertest) for unit and e2e tests.
 6. 🤜🤛 Combine unit and e2e test coverage. In the services we may have both type of tests, unit and e2e tests, and usually we would like to see what is the combined test coverage, so we can see the full picture.
 
+## 🤩 Other templates
+
+Are you thinking in start new projects in other frameworks or create a super fancy library? If you like this template there are others base on this you can check:
+
+- [Template for new Typescript Libraries](https://github.com/AlbertHernandez/typescript-library-template)
+- [Template for new NestJS Services](https://github.com/AlbertHernandez/nestjs-service-template)
+
 ## 🧑‍💻 Developing
 
 First, we will need to create our .env file, we can create a copy from the example one:
