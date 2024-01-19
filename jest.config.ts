@@ -14,6 +14,8 @@ const config: JestConfigWithTsJest = {
   modulePaths: ["."],
   moduleNameMapper: pathsToModuleNameMapper({
     "@src/*": ["src/*"],
+    "@core/*": ["src/core/*"],
+    "@contexts/*": ["src/contexts/*"],
   }),
 };
 

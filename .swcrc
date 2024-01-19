@@ -9,7 +9,9 @@
     },
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["src/*"]
+      "@src/*": ["src/*"],
+      "@core/*": ["src/core/*"],
+      "@contexts/*": ["src/contexts/*"],
     }
   },
   "module": {
