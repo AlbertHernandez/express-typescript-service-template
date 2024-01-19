@@ -1,4 +1,4 @@
-import { MyService } from "../../src/my-service";
+import { MyService } from "@src/my-service";
 
 describe("MyService", () => {
   let myService: MyService;
