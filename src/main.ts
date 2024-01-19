@@ -1,5 +1,5 @@
-import "./log-and-exit-uncaught-exceptions";
-import "./load-env-vars";
+import "./core/log-and-exit-uncaught-exceptions";
+import "./core/config/load-env-vars";
 
 import { Server } from "./server";
 

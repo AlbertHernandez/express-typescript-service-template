@@ -12,8 +12,5 @@
       "@src/*": ["src/*"],
     },
   },
-  "ts-node": {
-    "swc": true,
-  },
   "exclude": ["node_modules", "dist"],
 }
