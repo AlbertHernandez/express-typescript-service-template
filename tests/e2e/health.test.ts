@@ -1,6 +1,5 @@
+import { Server } from "@src/server";
 import request from "supertest";
-
-import { Server } from "../../src/server";
 
 describe("Health", () => {
   let server: Server;
