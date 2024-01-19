@@ -1,6 +1,8 @@
 import type { JestConfigWithTsJest } from "ts-jest";
 import { pathsToModuleNameMapper } from "ts-jest";
 
+import { compilerOptions } from "./tsconfig.json";
+
 const config: JestConfigWithTsJest = {
   transform: {
     "^.+\\.(t|j)s$": "@swc/jest",
@@ -11,12 +13,8 @@ const config: JestConfigWithTsJest = {
   collectCoverageFrom: ["src/**/*.ts"],
   setupFiles: ["<rootDir>.jest/set-env-vars.ts"],
   clearMocks: true,
-  modulePaths: ["."],
-  moduleNameMapper: pathsToModuleNameMapper({
-    "@src/*": ["src/*"],
-    "@core/*": ["src/core/*"],
-    "@contexts/*": ["src/contexts/*"],
-  }),
+  modulePaths: [compilerOptions.baseUrl],
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths),
 };
 
 export default config;
