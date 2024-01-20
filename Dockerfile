@@ -19,7 +19,7 @@ COPY .swcrc $DIR
 COPY src $DIR/src
 
 EXPOSE $PORT
-CMD ["npm", "run", "start:dev"]
+CMD ["npm", "run", "dev"]
 
 FROM base AS build
 
