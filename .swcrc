@@ -11,11 +11,11 @@
     "paths": {
       "@src/*": ["src/*"],
       "@core/*": ["src/core/*"],
-      "@contexts/*": ["src/contexts/*"],
+      "@contexts/*": ["src/contexts/*"]
     }
   },
   "module": {
     "type": "commonjs"
-  }
+  },
   "minify": false
 }
