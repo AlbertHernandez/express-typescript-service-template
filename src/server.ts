@@ -1,5 +1,5 @@
-import http from "http";
-import { AddressInfo } from "net";
+import http from "node:http";
+import { AddressInfo } from "node:net";
 
 import express, { Express } from "express";
 
