@@ -1,8 +1,10 @@
-import { config } from "@core/config/config";
-import { healthRouter } from "@core/health/health-router";
-import express, { Express } from "express";
 import http from "http";
 import { AddressInfo } from "net";
+
+import express, { Express } from "express";
+
+import { config } from "@core/config/config";
+import { healthRouter } from "@core/health/health-router";
 
 export class Server {
   private readonly app: Express;
