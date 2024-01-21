@@ -9,7 +9,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:prettier/recommended",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
+    "plugin:jest/style"
   ],
   "rules": {
     "simple-import-sort/imports": "error",
