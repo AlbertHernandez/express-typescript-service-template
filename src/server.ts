@@ -20,6 +20,7 @@ export class Server {
     return new Promise(resolve => {
       this.httpServer = this.app.listen(config.server.port, () => {
         const { port } = this.httpServer?.address() as AddressInfo;
+        // eslint-disable-next-line no-console
         console.log(`App is ready and listening on port ${port} 🚀`);
         resolve();
       });
