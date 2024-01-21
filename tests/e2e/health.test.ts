@@ -13,7 +13,8 @@ describe("Health", () => {
     await server.stop();
   });
 
-  it("/GET health", () => {
-    return request(server.getHttpServer()!).get("/health").expect(200);
+  it("/GET health", async () => {
+    const response = await request(server.getHttpServer()!).get("/health");
+    expect(response.status).toBe(200);
   });
 });
