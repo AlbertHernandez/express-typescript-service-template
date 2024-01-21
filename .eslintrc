@@ -42,6 +42,14 @@
           }
         ]
       }
+    },
+    {
+      "files": ["tests/**"],
+      "plugins": ["jest"],
+      "rules": {
+        "@typescript-eslint/unbound-method": "off",
+        "jest/unbound-method": "error"
+      }
     }
   ],
   "env": {
