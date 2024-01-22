@@ -1,3 +1,4 @@
+import * as nock from "nock";
 import request from "supertest";
 
 import { Server } from "@src/server";
@@ -8,10 +9,17 @@ describe("Health", () => {
   beforeAll(async () => {
     server = new Server();
     await server.start();
+    nock.disableNetConnect();
+    nock.enableNetConnect("127.0.0.1");
+  });
+
+  afterEach(() => {
+    nock.cleanAll();
   });
 
   afterAll(async () => {
     await server.stop();
+    nock.enableNetConnect();
   });
 
   it("/GET health", async () => {
