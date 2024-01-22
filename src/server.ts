@@ -6,6 +6,8 @@ import express, { Express } from "express";
 import { config } from "@core/config/config";
 import { healthRouter } from "@core/health/health-router";
 
+import { userRouter } from "@contexts/users/user-router";
+
 export class Server {
   private readonly app: Express;
   private httpServer?: http.Server;
@@ -14,6 +16,7 @@ export class Server {
     this.app = express();
     this.app.use(express.json());
     this.app.use("/health", healthRouter);
+    this.app.use("/users", userRouter);
   }
 
   async start(): Promise<void> {
