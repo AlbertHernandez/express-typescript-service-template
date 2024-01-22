@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { UserController } from "@contexts/users/user-controller";
+import { UserController } from "@contexts/users/api/user-controller";
 
 describe("UserController", () => {
   let controller: UserController;
