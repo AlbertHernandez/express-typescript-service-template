@@ -19,6 +19,7 @@ describe("UserController", () => {
 
   describe("run", () => {
     it("should respond with status 200", () => {
+      // Hello world!
       controller.run(req, res);
       expect(res.status).toHaveBeenCalledWith(200);
       expect(res.send).toHaveBeenCalledWith({ users: "ok" });

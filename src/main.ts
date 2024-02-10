@@ -12,3 +12,5 @@ function handleError(error: unknown) {
 }
 
 process.on("uncaughtException", handleError);
+
+// hello world
