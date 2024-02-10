@@ -20,6 +20,7 @@
 ## 👀 Motivation
 
 Starting a new service in NodeJS can be a bit frustrating, there are a lot of things to consider if we want to have a really good starting point where later we can iterate.
+
 The main objective of this template is to provide a good base configuration for our NodeJS services that we can start using and move to production as soon as possible.
 
 ## 🌟 What is including this template?
