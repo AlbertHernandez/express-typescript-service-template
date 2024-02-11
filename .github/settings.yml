@@ -3,7 +3,7 @@ repository:
   name: express-typescript-service-template
   description: Template for new services based on Express and Typescript with the Best Practices and Ready for Production
   homepage: github.com/AlbertHernandez/express-typescript-service-template
-  topics: nodejs, template, typescript, nodejs service template, express, nodejs express template
+  topics: nodejs, template, typescript, nodejs-service-template, express, nodejs-express-template
   has_wiki: false
   private: false
   has_issues: true
@@ -27,7 +27,4 @@ branches:
         contexts: []
       enforce_admins: false
       required_linear_history: true
-      restrictions:
-        apps: []
-        users: []
-        teams: []
+      restrictions: null
