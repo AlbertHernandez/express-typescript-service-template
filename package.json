@@ -38,7 +38,7 @@
     "generate-dist": "swc ./src -d dist --strip-leading-paths"
   },
   "dependencies": {
-    "dotenv": "^16.4.2",
+    "dotenv": "^16.4.3",
     "express": "^4.18.2"
   },
   "devDependencies": {
