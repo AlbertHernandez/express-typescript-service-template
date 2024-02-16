@@ -46,7 +46,7 @@
           - .prettierignore
           - .swcrc
           - .yamllint.yml
-          - .commitlint.config.js
+          - commitlint.config.ts
           - jest.config.ts
           - lint-staged.config.js
           - nest-cli.json
