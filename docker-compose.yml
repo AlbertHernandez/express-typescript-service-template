@@ -33,7 +33,7 @@ services:
       - "${PORT:-3000}:${PORT:-3000}"
       - "9229:9229"
     volumes:
-      - .:/project
+      - .:/app
     deploy:
       resources:
         limits:
