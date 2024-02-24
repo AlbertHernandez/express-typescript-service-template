@@ -1,6 +1,6 @@
 FROM node:20-alpine3.18 AS base
 
-ENV DIR /project
+ENV DIR /app
 WORKDIR $DIR
 ARG NPM_TOKEN
 
