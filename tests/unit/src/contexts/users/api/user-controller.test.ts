@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { vi } from "vitest";
 
 import { UserController } from "@contexts/users/api/user-controller";
 
@@ -10,8 +11,8 @@ describe("UserController", () => {
   beforeEach(() => {
     req = {} as Request;
     res = {
-      status: jest.fn().mockReturnThis(),
-      send: jest.fn(),
+      status: vi.fn().mockReturnThis(),
+      send: vi.fn(),
     } as unknown as Response;
 
     controller = new UserController();
