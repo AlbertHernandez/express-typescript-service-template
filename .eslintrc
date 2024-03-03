@@ -12,8 +12,6 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:prettier/recommended",
-    "plugin:jest/recommended",
-    "plugin:jest/style",
     "plugin:unicorn/recommended",
     "plugin:node/recommended"
   ],
