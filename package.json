@@ -42,7 +42,7 @@
     "express": "^4.18.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.0.3",
+    "@commitlint/cli": "^19.1.0",
     "@commitlint/config-conventional": "^19.0.3",
     "@commitlint/types": "^19.0.3",
     "@swc/cli": "^0.3.10",
