@@ -3,9 +3,9 @@ import { AddressInfo } from "node:net";
 
 import express, { Express } from "express";
 
-import { config } from "@core/config/config";
-import { healthRouter } from "@core/health/api/health-router";
+import { config } from "@shared/config/config";
 
+import { healthRouter } from "./health/api/health-router";
 import { userRouter } from "./users/api/user-router";
 
 export class Server {

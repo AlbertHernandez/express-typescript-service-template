@@ -12,7 +12,6 @@
     "resolveJsonModule": true,
     "paths": {
       "@src/*": ["src/*"],
-      "@core/*": ["src/core/*"],
       "@shared/*": ["src/shared/*"]
     },
     "types": ["vitest/globals"]
