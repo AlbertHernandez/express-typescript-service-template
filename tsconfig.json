@@ -13,8 +13,7 @@
     "paths": {
       "@src/*": ["src/*"],
       "@core/*": ["src/core/*"],
-      "@shared/*": ["src/shared/*"],
-      "@contexts/*": ["src/contexts/*"]
+      "@shared/*": ["src/shared/*"]
     },
     "types": ["vitest/globals"]
   },

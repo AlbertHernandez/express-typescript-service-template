@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { vi } from "vitest";
 
-import { UserController } from "@contexts/users/api/user-controller";
+import { UserController } from "@src/users/api/user-controller";
 
 describe("UserController", () => {
   let controller: UserController;
