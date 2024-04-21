@@ -35,9 +35,10 @@ The main objective of this template is to provide a good base configuration for 
    - ✅ Run the tests automatically.
    - ⚙️ Check our project does not have type errors with Typescript.
 5. 🧪 Testing with [Vitest](https://vitest.dev/) and [supertest](https://github.com/ladjs/supertest) for unit and e2e tests.
-6. 🤜🤛 Combine unit and e2e test coverage. In the services we may have both type of tests, unit and e2e tests, and usually we would like to see what is the combined test coverage, so we can see the full picture.
-7. 📌 Custom path aliases, where you can define your own paths (you will be able to use imports like `@shared/logger` instead of `../../../src/shared/logger`).
-8. 🚀 CI/CD using GitHub Actions, helping ensure a good quality of our code and providing useful insights about dependencies, security vulnerabilities and others.
+6. 🏎️ Performance testing using [k6](https://grafana.com/oss/k6/).
+7. 🤜🤛 Combine unit and e2e test coverage. In the services we may have both type of tests, unit and e2e tests, and usually we would like to see what is the combined test coverage, so we can see the full picture.
+8. 📌 Custom path aliases, where you can define your own paths (you will be able to use imports like `@shared/logger` instead of `../../../src/shared/logger`).
+9. 🚀 CI/CD using GitHub Actions, helping ensure a good quality of our code and providing useful insights about dependencies, security vulnerabilities and others.
 
 ## 🤩 Other templates
 
@@ -126,9 +127,16 @@ Or if you want e2e tests, you can execute:
 npm run test:e2e
 ```
 
-Also, this app has performance testing with [k6](https://k6.io/), if you want to run it you can execute:
+We also have performance testing with [k6](https://k6.io/), if you want to run it via docker, execute:
 
 ```bash
+docker-compose up k6
+```
+
+Or if you want to run it from your machine, execute:
+
+```bash
+brew install k6
 npm run test:performance
 ```
 
