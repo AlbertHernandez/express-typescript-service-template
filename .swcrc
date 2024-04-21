@@ -10,6 +10,8 @@
     "baseUrl": "./",
     "paths": {
       "@src/*": ["src/*"],
+      "@core/*": ["src/core/*"],
+      "@contexts/*": ["src/contexts/*"],
       "@shared/*": ["src/shared/*"]
     },
     "target": "es2022"

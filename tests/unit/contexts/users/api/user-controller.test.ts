@@ -1,10 +1,14 @@
 import { Request, Response } from "express";
 import { vi } from "vitest";
 
-import { UserController } from "@src/users/api/user-controller";
+import { ConsoleLogger } from "@shared/logger/console-logger";
+import { Logger } from "@shared/logger/logger";
+
+import { UserController } from "@contexts/users/api/user-controller";
 
 describe("UserController", () => {
   let controller: UserController;
+  let logger: Logger;
   let req: Request;
   let res: Response;
 
@@ -14,8 +18,8 @@ describe("UserController", () => {
       status: vi.fn().mockReturnThis(),
       send: vi.fn(),
     } as unknown as Response;
-
-    controller = new UserController();
+    logger = new ConsoleLogger();
+    controller = new UserController({ logger });
   });
 
   describe("run", () => {
