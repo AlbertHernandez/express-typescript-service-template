@@ -42,3 +42,16 @@ services:
         reservations:
           cpus: "0.25"
           memory: "256m"
+
+  k6:
+    image: ghcr.io/grafana/xk6-dashboard:latest
+    container_name: k6
+    volumes:
+      - ./tests/performance:/tests/performance
+      - ./k6-results:/home/k6
+    ports:
+      - "5665:5665"
+    environment:
+      K6_WEB_DASHBOARD_EXPORT: "report.html"
+      BASE_URL: "http://host.docker.internal:3000"
+    command: ["run", "--out", "web-dashboard", "/tests/performance/users/get-users.js"]

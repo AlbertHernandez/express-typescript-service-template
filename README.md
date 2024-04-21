@@ -126,6 +126,12 @@ Or if you want e2e tests, you can execute:
 npm run test:e2e
 ```
 
+Also, this app has performance testing with [k6](https://k6.io/), if you want to run it you can execute:
+
+```bash
+npm run test:performance
+```
+
 ## 💅 Linting
 
 To run the linter you can execute:
