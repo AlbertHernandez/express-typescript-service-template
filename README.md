@@ -34,6 +34,7 @@ The main objective of this template is to provide a good base configuration for 
    - 💬 Use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to ensure our commits have a convention.
    - ✅ Run the tests automatically.
    - ⚙️ Check our project does not have type errors with Typescript.
+   - 🙊 Check typos to ensure we don't have grammar mistakes.
 5. 🧪 Testing with [Vitest](https://vitest.dev/) and [supertest](https://github.com/ladjs/supertest) for unit and e2e tests.
 6. 🏎️ Performance testing using [k6](https://grafana.com/oss/k6/).
 7. 🤜🤛 Combine unit and e2e test coverage. In the services we may have both type of tests, unit and e2e tests, and usually we would like to see what is the combined test coverage, so we can see the full picture.

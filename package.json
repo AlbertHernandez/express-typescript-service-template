@@ -36,7 +36,8 @@
     "lint:fix": "npm run lint -- --fix",
     "build:clean": "rimraf dist; exit 0",
     "validate-typescript": "tsc -p tsconfig.prod.json --noEmit",
-    "generate-dist": "swc ./src -d dist --strip-leading-paths"
+    "generate-dist": "swc ./src -d dist --strip-leading-paths",
+    "typos": "if command -v typos >/dev/null 2>&1; then typos; else echo \"Typos cli tool is not installed, aborting checking typos. If you want to install it you can run 'brew install typos-cli'\"; fi"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
