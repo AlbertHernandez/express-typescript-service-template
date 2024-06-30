@@ -1,3 +1,4 @@
+import { StatusCodes } from "http-status-codes";
 import * as nock from "nock";
 import request from "supertest";
 
@@ -24,6 +25,6 @@ describe("Health", () => {
 
   it("/GET health", async () => {
     const response = await request(server.getHttpServer()!).get("/health");
-    expect(response.status).toBe(200);
+    expect(response.status).toBe(StatusCodes.OK);
   });
 });
