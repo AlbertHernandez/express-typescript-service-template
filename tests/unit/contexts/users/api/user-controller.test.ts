@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { StatusCodes } from "http-status-codes";
 import { vi } from "vitest";
 
 import { ConsoleLogger } from "@/shared/logger/console-logger";
@@ -25,7 +26,7 @@ describe("UserController", () => {
   describe("run", () => {
     it("should respond with status 200", () => {
       controller.run(req, res);
-      expect(res.status).toHaveBeenCalledWith(200);
+      expect(res.status).toHaveBeenCalledWith(StatusCodes.OK);
       expect(res.send).toHaveBeenCalledWith({ users: "ok" });
     });
   });
