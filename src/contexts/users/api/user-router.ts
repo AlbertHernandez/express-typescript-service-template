@@ -1,6 +1,6 @@
 import express from "express";
 
-import { ConsoleLogger } from "@shared/logger/console-logger";
+import { ConsoleLogger } from "@/shared/logger/console-logger";
 
 import { UserController } from "./user-controller";
 

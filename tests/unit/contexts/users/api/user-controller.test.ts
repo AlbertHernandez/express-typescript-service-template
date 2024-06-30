@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
 import { vi } from "vitest";
 
-import { ConsoleLogger } from "@shared/logger/console-logger";
-import { Logger } from "@shared/logger/logger";
+import { ConsoleLogger } from "@/shared/logger/console-logger";
+import { Logger } from "@/shared/logger/logger";
 
-import { UserController } from "@contexts/users/api/user-controller";
+import { UserController } from "@/contexts/users/api/user-controller";
 
 describe("UserController", () => {
   let controller: UserController;

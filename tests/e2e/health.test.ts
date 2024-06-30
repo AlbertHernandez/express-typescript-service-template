@@ -2,7 +2,7 @@ import { StatusCodes } from "http-status-codes";
 import * as nock from "nock";
 import request from "supertest";
 
-import { Server } from "@src/server";
+import { Server } from "@/src/server";
 
 describe("Health", () => {
   let server: Server;

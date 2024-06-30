@@ -3,13 +3,13 @@ import { AddressInfo } from "node:net";
 
 import express, { Express } from "express";
 
-import { config } from "@app/config/config";
-import { healthRouter } from "@app/health/api/health-router";
+import { config } from "@/app/config/config";
+import { healthRouter } from "@/app/health/api/health-router";
 
-import { ConsoleLogger } from "@shared/logger/console-logger";
-import { Logger } from "@shared/logger/logger";
+import { ConsoleLogger } from "@/shared/logger/console-logger";
+import { Logger } from "@/shared/logger/logger";
 
-import { userRouter } from "@contexts/users/api/user-router";
+import { userRouter } from "@/contexts/users/api/user-router";
 
 export class Server {
   private readonly app: Express;

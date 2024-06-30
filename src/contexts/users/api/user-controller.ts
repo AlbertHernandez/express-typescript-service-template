@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
 
-import { Logger } from "@shared/logger/logger";
+import { Logger } from "@/shared/logger/logger";
 
 export class UserController {
   private readonly logger;
