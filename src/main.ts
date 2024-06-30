@@ -1,4 +1,4 @@
-import "@src/core/config/load-env-vars";
+import "@app/config/load-env-vars";
 
 import { Server } from "./server";
 

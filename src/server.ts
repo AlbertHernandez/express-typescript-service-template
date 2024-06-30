@@ -3,8 +3,8 @@ import { AddressInfo } from "node:net";
 
 import express, { Express } from "express";
 
-import { config } from "@core/config/config";
-import { healthRouter } from "@core/health/api/health-router";
+import { config } from "@app/config/config";
+import { healthRouter } from "@app/health/api/health-router";
 
 import { ConsoleLogger } from "@shared/logger/console-logger";
 import { Logger } from "@shared/logger/logger";
