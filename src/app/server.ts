@@ -20,8 +20,8 @@ export class Server {
     this.logger = new ConsoleLogger();
     this.app = express();
     this.app.use(express.json());
-    this.app.use("/health", healthRouter);
-    this.app.use("/users", userRouter);
+    this.app.use("/api/health", healthRouter);
+    this.app.use("/api/users", userRouter);
   }
 
   async start(): Promise<void> {

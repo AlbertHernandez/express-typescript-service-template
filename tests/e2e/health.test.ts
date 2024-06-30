@@ -23,8 +23,8 @@ describe("Health", () => {
     nock.enableNetConnect();
   });
 
-  it("/GET health", async () => {
-    const response = await request(server.getHttpServer()!).get("/health");
+  it("/GET api/health", async () => {
+    const response = await request(server.getHttpServer()!).get("/api/health");
     expect(response.status).toBe(StatusCodes.OK);
   });
 });
