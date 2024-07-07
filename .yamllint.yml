@@ -9,6 +9,7 @@ rules:
   line-length:
     ignore: |
       /.github/workflows/*.yaml
+      /.github/actions/*.yaml
       /.github/workflows/*.yml
       /.github/settings.yml
       /docker-compose.yml
