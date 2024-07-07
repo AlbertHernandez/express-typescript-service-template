@@ -8,7 +8,7 @@ ignore: |
 rules:
   line-length:
     ignore: |
-      /.github/actions/*.yml
+      /.github/actions/**/*.yml
       /.github/workflows/*.yml
       /.github/settings.yml
       /docker-compose.yml
