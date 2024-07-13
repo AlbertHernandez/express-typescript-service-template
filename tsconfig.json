@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "ESNext",
-    "target": "ESNext",
+    "module": "esnext",
+    "target": "esnext",
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
     "esModuleInterop": true,
