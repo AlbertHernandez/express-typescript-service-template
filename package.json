@@ -1,6 +1,7 @@
 {
   "name": "express-typescript-service-template",
   "version": "1.0.0",
+  "type": "module",
   "description": "Skeleton for new typescript services based on express",
   "author": "alberthernandezdev@gmail.com",
   "license": "MIT",
