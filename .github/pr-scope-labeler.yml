@@ -12,7 +12,7 @@
           - create-vitest-test-config.ts
           - .env.test
           - scripts/calculate-global-test-coverage.ts
-          - nyc.config.js
+          - .nycrc.json
 
 📝 Documentation:
   - changed-files:
@@ -51,10 +51,9 @@
           - vitest.config.**.ts
           - create-vitest-test-config.ts
           - .env.test
-          - lint-staged.config.js
-          - nest-cli.json
-          - nyc.config.js
-          - prettier.config.js
+          - lint-staged.config.mjs
+          - .nycrc.json
+          - prettier.config.mjs
           - tsconfig.json
           - tsconfig.prod.json
 
