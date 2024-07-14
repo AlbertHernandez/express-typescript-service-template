@@ -1,4 +1,3 @@
----
 repository:
   name: express-typescript-service-template
   description: Template for new services based on Express and Typescript with the Best Practices and Ready for Production
