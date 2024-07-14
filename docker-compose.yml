@@ -1,4 +1,3 @@
----
 version: "3.8"
 
 services:
@@ -56,4 +55,9 @@ services:
       K6_WEB_DASHBOARD_EXPORT: "report.html"
       K6_WEB_DASHBOARD_PERIOD: "1s"
       K6_WEB_DASHBOARD_OPEN: "true"
-    command: ["run", "--out", "web-dashboard", "/tests/performance/contexts/users/get-users.mjs"]
+    command: [
+      "run",
+      "--out",
+      "web-dashboard",
+      "/tests/performance/contexts/users/get-users.mjs"
+    ]

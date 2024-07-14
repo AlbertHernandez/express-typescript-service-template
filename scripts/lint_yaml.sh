@@ -9,7 +9,12 @@ fi
 if [ "$#" -eq 0 ]; then
     files="."
 else
-    files="$@"
+    current_dir=$(pwd)
+    files=""
+    for file in "$@"; do
+        relative_file="${file#$current_dir/}"
+        files="$files $relative_file"
+    done
 fi
 
 yamllint $files
