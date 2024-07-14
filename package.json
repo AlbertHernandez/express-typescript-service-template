@@ -35,6 +35,7 @@
     "prepare": "husky",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
+    "lint:yaml": "chmod +x scripts/lint_yaml.sh && ./scripts/lint_yaml.sh",
     "build:clean": "rimraf dist; exit 0",
     "validate-typescript": "tsc -p tsconfig.prod.json --noEmit",
     "generate-dist": "swc ./src -d dist --strip-leading-paths",
