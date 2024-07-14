@@ -33,7 +33,7 @@
     "test:performance": "k6 run tests/performance/contexts/users/get-users.mjs",
     "calculate-global-test-coverage": "tsx scripts/calculate-global-test-coverage.ts",
     "prepare": "husky",
-    "lint": "eslint . --ext .js,.ts",
+    "lint": "eslint . --ext .js,.mjs,cjs,.ts,.mts",
     "lint:fix": "npm run lint -- --fix",
     "lint:yaml": "chmod +x scripts/lint_yaml.sh && ./scripts/lint_yaml.sh",
     "build:clean": "rimraf dist; exit 0",
