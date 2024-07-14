@@ -33,7 +33,7 @@ services:
       - "${PORT:-3000}:${PORT:-3000}"
       - "9229:9229"
     volumes:
-      - .:/app
+      - ./src:/app/src
     deploy:
       resources:
         limits:
@@ -56,4 +56,4 @@ services:
       K6_WEB_DASHBOARD_EXPORT: "report.html"
       K6_WEB_DASHBOARD_PERIOD: "1s"
       K6_WEB_DASHBOARD_OPEN: "true"
-    command: ["run", "--out", "web-dashboard", "/tests/performance/contexts/users/get-users.js"]
+    command: ["run", "--out", "web-dashboard", "/tests/performance/contexts/users/get-users.mjs"]
