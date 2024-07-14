@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "exec": "tsx ./src/main.ts",
+  "ext": "ts, js"
+}

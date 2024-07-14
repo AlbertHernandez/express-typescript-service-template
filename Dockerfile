@@ -16,6 +16,7 @@ RUN echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ".npmrc" && \
 
 COPY tsconfig*.json .
 COPY .swcrc .
+COPY nodemon.json .
 COPY src src
 
 EXPOSE $PORT
