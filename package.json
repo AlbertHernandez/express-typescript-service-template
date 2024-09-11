@@ -47,7 +47,7 @@
     "http-status-codes": "^2.3.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.4.1",
+    "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.4.1",
     "@commitlint/types": "^19.0.3",
     "@swc/cli": "^0.4.0",
