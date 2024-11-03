@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.21.1",
+    "express": "^5.0.1",
     "http-status-codes": "^2.3.0"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
     "@commitlint/types": "^19.0.3",
     "@swc/cli": "^0.5.0",
     "@swc/core": "^1.7.42",
-    "@types/express": "^4.17.20",
+    "@types/express": "^5.0.0",
     "@types/fs-extra": "^11.0.4",
     "@types/supertest": "^6.0.2",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
