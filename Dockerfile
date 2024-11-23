@@ -4,7 +4,7 @@ ENV DIR /app
 WORKDIR $DIR
 ARG NPM_TOKEN
 
-RUN npm install -g pnpm
+RUN npm install -g pnpm@9
 
 FROM base AS dev
 
@@ -22,7 +22,7 @@ COPY nodemon.json .
 COPY src src
 
 EXPOSE $PORT
-CMD ["pnpm", "run", "dev"]
+CMD ["pnpm", "dev"]
 
 FROM base AS build
 
