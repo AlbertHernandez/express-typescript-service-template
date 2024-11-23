@@ -32,7 +32,7 @@
     "test:e2e": "vitest run --coverage --config ./vitest.config.e2e.ts",
     "test:performance": "k6 run tests/performance/contexts/users/get-users.mjs",
     "calculate-global-test-coverage": "tsx scripts/calculate-global-test-coverage.ts",
-    "prepare": "husky",
+    "prepare": "[ -f .husky/install.mjs ] && node .husky/install.mjs || true",
     "lint": "eslint . --ext .js,.mjs,cjs,.ts,.mts",
     "lint:fix": "eslint . --ext .js,.mjs,cjs,.ts,.mts --fix",
     "lint:file": "eslint",

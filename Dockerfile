@@ -9,6 +9,7 @@ RUN npm install -g pnpm@9
 FROM base AS dev
 
 ENV NODE_ENV=development
+ENV CI=true
 
 COPY package.json pnpm-lock.yaml ./
 
@@ -25,6 +26,8 @@ EXPOSE $PORT
 CMD ["pnpm", "dev"]
 
 FROM base AS build
+
+ENV CI=true
 
 RUN apk update && apk add --no-cache dumb-init=1.2.5-r3
 
