@@ -4,12 +4,12 @@ ENV DIR /app
 WORKDIR $DIR
 ARG NPM_TOKEN
 
-RUN npm install -g pnpm@9
-
 FROM base AS dev
 
 ENV NODE_ENV=development
 ENV CI=true
+
+RUN npm install -g pnpm@9
 
 COPY package.json pnpm-lock.yaml ./
 
@@ -29,7 +29,7 @@ FROM base AS build
 
 ENV CI=true
 
-RUN apk update && apk add --no-cache dumb-init=1.2.5-r3
+RUN apk update && apk add --no-cache dumb-init=1.2.5-r3 && npm install -g pnpm@9
 
 COPY package.json pnpm-lock.yaml ./
 RUN echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ".npmrc" && \
