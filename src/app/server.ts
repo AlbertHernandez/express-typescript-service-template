@@ -39,17 +39,22 @@ export class Server {
       if (this.httpServer) {
         this.httpServer.close(error => {
           if (error) {
-            return reject(error);
+            reject(error);
+            return;
           }
-          return resolve();
+          resolve();
         });
       }
 
-      return resolve();
+      resolve();
     });
   }
 
-  getHttpServer(): http.Server | undefined {
+  getHttpServer(): http.Server {
+    if (!this.httpServer) {
+      throw new Error("Server has not been started yet");
+    }
+
     return this.httpServer;
   }
 }
