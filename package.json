@@ -22,6 +22,7 @@
     "node": ">=22.x",
     "pnpm": ">=9.x"
   },
+  "packageManager": "pnpm@9.14.2",
   "main": "dist/main.js",
   "scripts": {
     "build": "node --run validate-typescript && node --run build:clean && node --run generate-dist",
