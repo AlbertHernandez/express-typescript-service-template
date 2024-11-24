@@ -1,11 +1,23 @@
-name: '🏷️ PR Size Labeler'
+name: '🏷️ PR Labels'
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize, reopened]
 
 jobs:
-  labeler:
+  scope-labels:
+    name: Label the PR scope
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v5
+        with:
+          configuration-path: .github/pr-scope-labeler.yml
+          sync-labels: true
+
+  size-labels:
     runs-on: ubuntu-latest
     name: Label the PR size
     steps:
@@ -27,3 +39,11 @@ jobs:
             Please make sure you are NOT addressing multiple issues with one PR.
             Note this PR might be rejected due to its size.
           files_to_ignore: 'pnpm-lock.yaml *.lock docs/*'
+
+  conventional-release-labels:
+    runs-on: ubuntu-latest
+    name: Conventional release labels
+    steps:
+      - uses: bcoe/conventional-release-labels@v1
+        with:
+          type_labels: '{"feat": "🚀 Feature", "fix": "🕵🏻 Fix", "breaking": "⚠️ Breaking Change"}'
