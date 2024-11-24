@@ -20,7 +20,7 @@
   ],
   "engines": {
     "node": ">=22.x",
-    "npm": ">=10.x"
+    "pnpm": ">=9.x"
   },
   "main": "dist/main.js",
   "scripts": {
