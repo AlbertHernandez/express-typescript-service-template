@@ -44,7 +44,7 @@
     "typos": "chmod +x scripts/check_typos.sh && ./scripts/check_typos.sh"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
+    "dotenv": "^17.2.3",
     "express": "^5.0.1",
     "http-status-codes": "^2.3.0"
   },
