@@ -75,7 +75,7 @@
     "nock": "^13.5.5",
     "nodemon": "^3.1.7",
     "nyc": "^17.1.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.7.4",
     "rimraf": "^6.0.1",
     "supertest": "^7.0.0",
     "tsconfig-paths": "^4.2.0",
